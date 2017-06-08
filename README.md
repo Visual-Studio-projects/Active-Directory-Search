@@ -6,8 +6,7 @@ This Active Directory Search tool was written in Visual Studio 2013 C# Windows F
 </h1>
 
 ## Overview
-This is used for...
-
+This application uses LDAP (Lightweight Directory Access Protocol) to search Active Directory items from the treeview, the toolbar "Find" button or double clicking on the item in the listview
 
 ## Dependencies
 |Software                        |Dependency                 |
@@ -21,4 +20,22 @@ This is used for...
 
 
 ## Functionality
-This...
+Listed below is the detailed functionality of this application and its components.  
+
+####	Find Text (Dropdown)
+* Lists all the values searched for in the current session
+
+####	Find (Button)
+* Queries Active Directory for the text in the "Find Text" textbox
+
+#### Save (Button)
+* Saves the current listbox view to a .csv file
+
+####	User List (Button)
+* This will change the layout of the listbox to show more information about each member of a group
+
+####	Settings (Button)
+* Opens the settings form. The domain name must be updated here.
+
+####	About (Button)
+* Opens the about form

@@ -1,5 +1,5 @@
 # ActiveDirectorySearch
-This Active Directory Search tool was written in Visual Studio 2013 C# Windows Forms and exports the results from LDAP to csv format.
+This Active Directory Search tool was written in Visual Studio Community 2017 C# Windows Forms and exports the results from LDAP to csv format.
 
 <h1 align="center">
   <img src="Images/main_form.png" alt="MyApp" />
@@ -11,7 +11,7 @@ This application uses LDAP (Lightweight Directory Access Protocol) to search Act
 ## Dependencies
 |Software                        |Dependency                 |
 |:-------------------------------|:--------------------------|
-|[Microsoft Visual Studio 2013](https://www.visualstudio.com/en-us/news/releasenotes/vs2013-update4-rtm-vs)|Solution|
+|[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
 
 | Term                      | Meaning                                                                                  |
 |:--------------------------|:-----------------------------------------------------------------------------------------|

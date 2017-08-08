@@ -1,3 +1,5 @@
+<img align="left" src="https://raw.githubusercontent.com/aduguid/ActiveDirectorySearch/master/Resources/ADSearch.ico" width="64px">
+
 # Active Directory Search
 This Active Directory Search tool was written in Visual Studio Community 2017 C# Windows Forms and exports the results from LDAP to csv format.
 

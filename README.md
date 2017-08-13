@@ -1,21 +1,16 @@
 <img align="left" src="https://raw.githubusercontent.com/aduguid/ActiveDirectorySearch/master/Resources/ADSearch.ico" width="64px">
 
 # Active Directory Search
-This Active Directory Search tool was written in Visual Studio Community 2017 C# Windows Forms and exports the results from LDAP to csv format.
+This Active Directory Search tool was written in Visual Studio Community 2017 C# Windows Forms and exports the results from LDAP to csv format. It uses LDAP (Lightweight Directory Access Protocol) to search Active Directory items from the treeview, the toolbar "Find" button or double clicking on the item in the listview.
 
 <h1 align="center">
   <img src="Images/main_form.png" alt="MyApp" />
 </h1>
 
 ## Table of Contents
-- <a href="#overview">Overview</a>
 - <a href="#dependencies">Dependencies</a>
 - <a href="#glossary-of-terms">Glossary of Terms</a>
 - <a href="#functionality">Functionality</a>
-
-<a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"> </a>
-## Overview
-This application uses LDAP (Lightweight Directory Access Protocol) to search Active Directory items from the treeview, the toolbar "Find" button or double clicking on the item in the listview
 
 <a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"> </a>
 ## Dependencies

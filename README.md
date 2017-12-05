@@ -14,10 +14,14 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
   <img src="Images/main_form.png" alt="MyApp" />
 </h1>
 
+<br>
+
 ## Table of Contents
 - <a href="#dependencies">Dependencies</a>
 - <a href="#glossary-of-terms">Glossary of Terms</a>
 - <a href="#functionality">Functionality</a>
+
+<br>
 
 <a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"> </a>
 ## Dependencies
@@ -28,12 +32,16 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 |[Snagit](http://discover.techsmith.com/snagit-non-brand-desktop/?gclid=CNzQiOTO09UCFVoFKgod9EIB3g)|Read Me|
 |Badges ([Library](https://shields.io/), [Custom](https://rozaxe.github.io/factory/), [Star/Fork](http://githubbadges.com))|Read Me|
 
+<br>
+
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
 | Term                      | Meaning                                                                                  |
 |:--------------------------|:-----------------------------------------------------------------------------------------|
 |LDAP |Lightweight Directory Access Protocol|
 |CSV |Comma-Separated Values|
+
+<br>
 
 <a id="user-content-functionality" class="anchor" href="#functionality" aria-hidden="true"> </a>
 ## Functionality

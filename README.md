@@ -1,15 +1,15 @@
-<img align="left" src="https://raw.githubusercontent.com/aduguid/ActiveDirectorySearch/master/CS/Resources/ADSearch.ico" width="64px">
+<img align="left" src="https://raw.githubusercontent.com/Visual-Studio-projects/ActiveDirectorySearch/master/CS/Resources/ADSearch.ico" width="64px">
 
 # Active Directory Search
 This Active Directory Search tool was written in Microsoft Visual Studio Community 2017 C#/VB.NET Windows Forms and exports the results from LDAP to csv format. It uses LDAP (Lightweight Directory Access Protocol) to search Active Directory items from the treeview, the toolbar "Find" button or double clicking on the item in the listview.
 
 [![Join the chat at https://gitter.im/ScriptHelp/Lobby](https://badges.gitter.im/ActiveDirectorySearch/Lobby.svg)](https://gitter.im/ActiveDirectorySearch/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
-[![release](http://github-release-version.herokuapp.com/github/aduguid/ActiveDirectorySearch/release.svg?style=flat)](https://github.com/aduguid/ActiveDirectorySearch/releases/latest)
+[![release](http://github-release-version.herokuapp.com/github/Visual-Studio-projects/ActiveDirectorySearch/release.svg?style=flat)](https://github.com/Visual-Studio-projects/ActiveDirectorySearch/releases/latest)
 <!---
-[![star this repo](http://githubbadges.com/star.svg?user=aduguid&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/aduguid/ActiveDirectorySearch)
-[![fork this repo](http://githubbadges.com/fork.svg?user=aduguid&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/aduguid/ActiveDirectorySearch/fork)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aduguid/ActiveDirectorySearch/issues)
+[![star this repo](http://githubbadges.com/star.svg?user=Visual-Studio-projects&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/ActiveDirectorySearch)
+[![fork this repo](http://githubbadges.com/fork.svg?user=Visual-Studio-projects&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/ActiveDirectorySearch/fork)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Visual-Studio-projects/ActiveDirectorySearch/issues)
 --->
 
 <h1 align="center">

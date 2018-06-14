@@ -1,4 +1,4 @@
-<img align="left" src="https://raw.githubusercontent.com/Visual-Studio-projects/ActiveDirectorySearch/master/CS/Resources/ADSearch.ico" width="64px">
+<img align="left" src="https://raw.githubusercontent.com/Visual-Studio-projects/Active-Directory-Search/master/CS/Resources/ADSearch.ico" width="64px">
 
 # Active Directory Search
 This Active Directory Search tool was written in Microsoft Visual Studio Community 2017 C#/VB.NET Windows Forms and exports the results from LDAP to csv format. It uses LDAP (Lightweight Directory Access Protocol) to search Active Directory items from the treeview, the toolbar "Find" button or double clicking on the item in the listview.
@@ -8,9 +8,9 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 [![release](http://github-release-version.herokuapp.com/github/Visual-Studio-projects/Active-Directory-Search/release.svg?style=flat)](https://github.com/Visual-Studio-projects/Active-Directory-Search/releases/latest)
 
 <!---
-[![star this repo](http://githubbadges.com/star.svg?user=Visual-Studio-projects&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/ActiveDirectorySearch)
-[![fork this repo](http://githubbadges.com/fork.svg?user=Visual-Studio-projects&repo=ActiveDirectorySearch&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/ActiveDirectorySearch/fork)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Visual-Studio-projects/ActiveDirectorySearch/issues)
+[![star this repo](http://githubbadges.com/star.svg?user=Visual-Studio-projects&repo=Active-Directory-Search&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/Active-Directory-Search)
+[![fork this repo](http://githubbadges.com/fork.svg?user=Visual-Studio-projects&repo=Active-Directory-Search&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/Active-Directory-Search/fork)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Visual-Studio-projects/Active-Directory-Search/issues)
 --->
 
 <h1 align="center">

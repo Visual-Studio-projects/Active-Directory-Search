@@ -14,7 +14,7 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 --->
 
 <h1 align="center">
-  <img src="Images/main_form.png" alt="MyApp" />
+  <img src="Images/main_form2.png" alt="MyApp" />
 </h1>
 
 <br>

@@ -58,7 +58,7 @@ Listed below is the detailed functionality of this application and its component
 * Queries Active Directory for the text in the "Find Text" textbox
 
 #### Save (Button)
-* Saves the current listbox view to a .csv file
+* Saves the current listbox view to a .csv file to the user's desktop
 
 ####	User List (Button)
 * This will change the layout of the listbox to show more information about each member of a group

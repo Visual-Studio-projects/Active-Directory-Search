@@ -5,7 +5,8 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/AnthonyDuguid/1.00)
 [![Join the chat at https://gitter.im/ScriptHelp/Lobby](https://badges.gitter.im/ActiveDirectorySearch/Lobby.svg)](https://gitter.im/ActiveDirectorySearch/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
-[![release](http://github-release-version.herokuapp.com/github/Visual-Studio-projects/Active-Directory-Search/release.svg?style=flat)](https://github.com/Visual-Studio-projects/Active-Directory-Search/releases/latest)
+[![Latest Release](https://img.shields.io/github/release/Visual-Studio-projects/Active-Directory-Search.svg?label=latest%20release)](https://github.com/Visual-Studio-projects/Active-Directory-Search/releases)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/Visual-Studio-projects/Active-Directory-Search/latest.svg)](https://github.com/Visual-Studio-projects/Active-Directory-Search)
 
 <!---
 [![star this repo](http://githubbadges.com/star.svg?user=Visual-Studio-projects&repo=Active-Directory-Search&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/Active-Directory-Search)

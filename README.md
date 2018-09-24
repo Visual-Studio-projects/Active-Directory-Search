@@ -10,6 +10,9 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 <a href="https://github.com/Visual-Studio-projects/Active-Directory-Search/issues" target="_blank">
  <img alt="Issues" src="https://img.shields.io/github/issues/Visual-Studio-projects/Active-Directory-Search.svg" />
 </a>
+<a href="https://github.com/Visual-Studio-projects/Active-Directory-Search/releases" target="_blank">
+ <img alt="All releases" src="https://img.shields.io/github/downloads/Visual-Studio-projects/Active-Directory-Search/total.svg" />
+</a>
 
 <h1 align="center">
   <img src="Images/main_form2.png" alt="MyApp" />

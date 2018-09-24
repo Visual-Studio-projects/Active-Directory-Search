@@ -7,12 +7,9 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
 [![Latest Release](https://img.shields.io/github/release/Visual-Studio-projects/Active-Directory-Search.svg?label=latest%20release)](https://github.com/Visual-Studio-projects/Active-Directory-Search/releases)
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/Visual-Studio-projects/Active-Directory-Search/latest.svg)](https://github.com/Visual-Studio-projects/Active-Directory-Search)
-
-<!---
-[![star this repo](http://githubbadges.com/star.svg?user=Visual-Studio-projects&repo=Active-Directory-Search&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/Active-Directory-Search)
-[![fork this repo](http://githubbadges.com/fork.svg?user=Visual-Studio-projects&repo=Active-Directory-Search&style=flat&color=fff&background=007ec6)](http://github.com/Visual-Studio-projects/Active-Directory-Search/fork)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Visual-Studio-projects/Active-Directory-Search/issues)
---->
+<a href="https://github.com/Visual-Studio-projects/Active-Directory-Search/issues" target="_blank">
+ <img alt="Issues" src="https://img.shields.io/github/issues/Visual-Studio-projects/Active-Directory-Search.svg" />
+</a>
 
 <h1 align="center">
   <img src="Images/main_form2.png" alt="MyApp" />

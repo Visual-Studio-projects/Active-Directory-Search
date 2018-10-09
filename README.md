@@ -6,13 +6,8 @@ This Active Directory Search tool was written in Microsoft Visual Studio Communi
 [![Join the chat at https://gitter.im/ScriptHelp/Lobby](https://badges.gitter.im/ActiveDirectorySearch/Lobby.svg)](https://gitter.im/ActiveDirectorySearch/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
 [![Latest Release](https://img.shields.io/github/release/Visual-Studio-projects/Active-Directory-Search.svg?label=latest%20release)](https://github.com/Visual-Studio-projects/Active-Directory-Search/releases)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/Visual-Studio-projects/Active-Directory-Search/latest.svg)](https://github.com/Visual-Studio-projects/Active-Directory-Search)
-<a href="https://github.com/Visual-Studio-projects/Active-Directory-Search/issues" target="_blank">
- <img alt="Issues" src="https://img.shields.io/github/issues/Visual-Studio-projects/Active-Directory-Search.svg" />
-</a>
-<a href="https://github.com/Visual-Studio-projects/Active-Directory-Search/releases" target="_blank">
- <img alt="All releases" src="https://img.shields.io/github/downloads/Visual-Studio-projects/Active-Directory-Search/total.svg" />
-</a>
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/Visual-Studio-projects/Active-Directory-Search/latest.svg)](https://github.com/Visual-Studio-projects/Active-Directory-Search/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/Visual-Studio-projects/Active-Directory-Search.svg)](https://github.com/Visual-Studio-projects/Active-Directory-Search/issues)
 
 <h1 align="center">
   <img src="Images/main_form2.png" alt="MyApp" />

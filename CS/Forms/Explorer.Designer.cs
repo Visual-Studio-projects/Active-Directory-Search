@@ -289,12 +289,14 @@ namespace ADSearch.Forms
             this.tsbUserList.Text = " User List ";
             this.tsbUserList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbUserList.ToolTipText = "Show all users";
+            this.tsbUserList.Visible = false;
             this.tsbUserList.Click += new System.EventHandler(this.tsbUserList_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator3.Visible = false;
             // 
             // tsbFindDevice
             // 

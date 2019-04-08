@@ -187,3 +187,9 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/CS/.vs/ADSearch/v16/Server/sqlite3/storage.ide-wal
+/CS/.vs/ADSearch/v16/Server/sqlite3/storage.ide-shm
+/CS/.vs/ADSearch/v16/Server/sqlite3/storage.ide
+/CS/.vs/ADSearch/v16/Server/sqlite3/db.lock

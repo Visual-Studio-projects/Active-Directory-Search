@@ -2,6 +2,9 @@
 
 namespace ADSearch.Forms
 {
+    /// <summary>
+    /// 
+    /// </summary>
     partial class Explorer
     {
         /// <summary>
@@ -72,9 +75,9 @@ namespace ADSearch.Forms
             this.Panel1.Controls.Add(this.tlpMain);
             this.Panel1.Controls.Add(this.Splitter1);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel1.Location = new System.Drawing.Point(0, 45);
+            this.Panel1.Location = new System.Drawing.Point(0, 48);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(784, 547);
+            this.Panel1.Size = new System.Drawing.Size(784, 591);
             this.Panel1.TabIndex = 114;
             // 
             // tlpMain
@@ -91,16 +94,16 @@ namespace ADSearch.Forms
             this.tlpMain.Location = new System.Drawing.Point(3, 3);
             this.tlpMain.Name = "tlpMain";
             this.tlpMain.RowCount = 3;
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tlpMain.Size = new System.Drawing.Size(778, 541);
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tlpMain.Size = new System.Drawing.Size(778, 585);
             this.tlpMain.TabIndex = 7;
             // 
             // spcActiveDirectory
             // 
             this.spcActiveDirectory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spcActiveDirectory.Location = new System.Drawing.Point(13, 13);
+            this.spcActiveDirectory.Location = new System.Drawing.Point(13, 14);
             this.spcActiveDirectory.Name = "spcActiveDirectory";
             // 
             // spcActiveDirectory.Panel1
@@ -110,19 +113,22 @@ namespace ADSearch.Forms
             // spcActiveDirectory.Panel2
             // 
             this.spcActiveDirectory.Panel2.Controls.Add(this.lvwAttributes);
-            this.spcActiveDirectory.Size = new System.Drawing.Size(752, 515);
+            this.spcActiveDirectory.Size = new System.Drawing.Size(752, 557);
             this.spcActiveDirectory.SplitterDistance = 267;
             this.spcActiveDirectory.TabIndex = 8;
             // 
             // tvwGroups
             // 
+            this.tvwGroups.BackColor = System.Drawing.SystemColors.Window;
             this.tvwGroups.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tvwGroups.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvwGroups.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tvwGroups.ImageIndex = 0;
             this.tvwGroups.ImageList = this.IltGroups;
             this.tvwGroups.Location = new System.Drawing.Point(0, 0);
             this.tvwGroups.Name = "tvwGroups";
             this.tvwGroups.SelectedImageIndex = 0;
-            this.tvwGroups.Size = new System.Drawing.Size(267, 515);
+            this.tvwGroups.Size = new System.Drawing.Size(267, 557);
             this.tvwGroups.TabIndex = 7;
             this.tvwGroups.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.tvwGroups_BeforeCollapse);
             this.tvwGroups.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.tvwGroups_BeforeExpand);
@@ -145,13 +151,16 @@ namespace ADSearch.Forms
             // 
             // lvwAttributes
             // 
+            this.lvwAttributes.BackColor = System.Drawing.SystemColors.Window;
             this.lvwAttributes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvwAttributes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwAttributes.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lvwAttributes.FullRowSelect = true;
             this.lvwAttributes.GridLines = true;
             this.lvwAttributes.Location = new System.Drawing.Point(0, 0);
             this.lvwAttributes.MultiSelect = false;
             this.lvwAttributes.Name = "lvwAttributes";
-            this.lvwAttributes.Size = new System.Drawing.Size(481, 515);
+            this.lvwAttributes.Size = new System.Drawing.Size(481, 557);
             this.lvwAttributes.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvwAttributes.TabIndex = 6;
             this.tltControlTips.SetToolTip(this.lvwAttributes, "Double-Click to view values from member | memberOf | sAMAccountName");
@@ -164,7 +173,7 @@ namespace ADSearch.Forms
             // 
             this.Splitter1.Location = new System.Drawing.Point(0, 0);
             this.Splitter1.Name = "Splitter1";
-            this.Splitter1.Size = new System.Drawing.Size(3, 547);
+            this.Splitter1.Size = new System.Drawing.Size(3, 591);
             this.Splitter1.TabIndex = 5;
             this.Splitter1.TabStop = false;
             // 
@@ -186,12 +195,12 @@ namespace ADSearch.Forms
             // 
             // stsFooter
             // 
-            this.stsFooter.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stsFooter.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stsFooter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslCopyright,
             this.tslVersion,
             this.tslReleaseDate});
-            this.stsFooter.Location = new System.Drawing.Point(0, 592);
+            this.stsFooter.Location = new System.Drawing.Point(0, 639);
             this.stsFooter.Name = "stsFooter";
             this.stsFooter.Size = new System.Drawing.Size(784, 22);
             this.stsFooter.TabIndex = 117;
@@ -209,7 +218,8 @@ namespace ADSearch.Forms
             // tsp2
             // 
             this.tsp2.Name = "tsp2";
-            this.tsp2.Size = new System.Drawing.Size(6, 45);
+            this.tsp2.Size = new System.Drawing.Size(6, 48);
+            this.tsp2.Visible = false;
             // 
             // tlbActiveDirectory
             // 
@@ -232,31 +242,34 @@ namespace ADSearch.Forms
             this.tlbActiveDirectory.Location = new System.Drawing.Point(0, 0);
             this.tlbActiveDirectory.Name = "tlbActiveDirectory";
             this.tlbActiveDirectory.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.tlbActiveDirectory.Size = new System.Drawing.Size(784, 45);
+            this.tlbActiveDirectory.Size = new System.Drawing.Size(784, 48);
             this.tlbActiveDirectory.TabIndex = 115;
             this.tlbActiveDirectory.Text = "tlbActiveDirectory";
             // 
             // toolStripLabel2
             // 
+            this.toolStripLabel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(58, 42);
+            this.toolStripLabel2.Size = new System.Drawing.Size(56, 45);
             this.toolStripLabel2.Text = "  Find Text";
             // 
             // cboFindItems
             // 
             this.cboFindItems.DropDownWidth = 200;
+            this.cboFindItems.Font = new System.Drawing.Font("Arial", 9F);
             this.cboFindItems.Name = "cboFindItems";
-            this.cboFindItems.Size = new System.Drawing.Size(200, 45);
+            this.cboFindItems.Size = new System.Drawing.Size(200, 48);
             this.cboFindItems.ToolTipText = "Search for user name ";
             this.cboFindItems.DropDownClosed += new System.EventHandler(this.cboFindItems_DropDownClosed);
             this.cboFindItems.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboFindItems_KeyPress);
             // 
             // tsbFind
             // 
+            this.tsbFind.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbFind.Image = global::ADSearch.Properties.Resources.magnifier;
             this.tsbFind.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFind.Name = "tsbFind";
-            this.tsbFind.Size = new System.Drawing.Size(55, 42);
+            this.tsbFind.Size = new System.Drawing.Size(55, 45);
             this.tsbFind.Text = "    &Find    ";
             this.tsbFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbFind.ToolTipText = "Find  (Alt + F)";
@@ -265,15 +278,15 @@ namespace ADSearch.Forms
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 48);
             // 
             // tsbSave
             // 
-            this.tsbSave.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbSave.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbSave.Image = global::ADSearch.Properties.Resources.disk;
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(53, 42);
+            this.tsbSave.Size = new System.Drawing.Size(54, 45);
             this.tsbSave.Text = "   &Save   ";
             this.tsbSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbSave.ToolTipText = "Save file to desktop (Alt + S)";
@@ -281,11 +294,11 @@ namespace ADSearch.Forms
             // 
             // tsbUserList
             // 
-            this.tsbUserList.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbUserList.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbUserList.Image = global::ADSearch.Properties.Resources.user;
             this.tsbUserList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbUserList.Name = "tsbUserList";
-            this.tsbUserList.Size = new System.Drawing.Size(58, 42);
+            this.tsbUserList.Size = new System.Drawing.Size(60, 45);
             this.tsbUserList.Text = " User List ";
             this.tsbUserList.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbUserList.ToolTipText = "Show all users";
@@ -295,16 +308,16 @@ namespace ADSearch.Forms
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 45);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 48);
             this.toolStripSeparator3.Visible = false;
             // 
             // tsbFindDevice
             // 
-            this.tsbFindDevice.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbFindDevice.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbFindDevice.Image = global::ADSearch.Properties.Resources.server;
             this.tsbFindDevice.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFindDevice.Name = "tsbFindDevice";
-            this.tsbFindDevice.Size = new System.Drawing.Size(52, 42);
+            this.tsbFindDevice.Size = new System.Drawing.Size(53, 45);
             this.tsbFindDevice.Text = "  &Device ";
             this.tsbFindDevice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbFindDevice.ToolTipText = "Find Device (Alt + D) cmd.exe nbtstat";
@@ -313,44 +326,48 @@ namespace ADSearch.Forms
             // 
             // tsbSettings
             // 
-            this.tsbSettings.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbSettings.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbSettings.Image = global::ADSearch.Properties.Resources.cog;
             this.tsbSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSettings.Name = "tsbSettings";
-            this.tsbSettings.Size = new System.Drawing.Size(50, 42);
+            this.tsbSettings.Size = new System.Drawing.Size(50, 45);
             this.tsbSettings.Text = "Settings";
             this.tsbSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbSettings.Visible = false;
             this.tsbSettings.Click += new System.EventHandler(this.tsbSettings_Click);
             // 
             // toolStripLabel1
             // 
+            this.toolStripLabel1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 42);
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 45);
             this.toolStripLabel1.Text = "Domain";
+            this.toolStripLabel1.Visible = false;
             // 
             // cboDomain
             // 
             this.cboDomain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDomain.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cboDomain.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDomain.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDomain.Items.AddRange(new object[] {
             "DOMAIN1",
             "DOMAIN2"});
             this.cboDomain.Name = "cboDomain";
-            this.cboDomain.Size = new System.Drawing.Size(121, 45);
+            this.cboDomain.Size = new System.Drawing.Size(121, 48);
+            this.cboDomain.Visible = false;
             this.cboDomain.DropDownClosed += new System.EventHandler(this.cboDomain_DropDownClosed);
             // 
             // Explorer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 614);
+            this.ClientSize = new System.Drawing.Size(784, 661);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.stsFooter);
             this.Controls.Add(this.tlbActiveDirectory);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 650);
+            this.MinimumSize = new System.Drawing.Size(800, 697);
             this.Name = "Explorer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

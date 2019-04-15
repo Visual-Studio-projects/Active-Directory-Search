@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows.Forms;
 
 // <summary> 
@@ -20,19 +21,23 @@ namespace ADSearch.Scripts
         /// <remarks></remarks>
         public static void DisplayMessage(Exception ex, Boolean isSilent = false)
         {
-            System.Diagnostics.StackFrame sf = new System.Diagnostics.StackFrame(1);
-            System.Reflection.MethodBase caller = sf.GetMethod();
-            string currentProcedure = (caller.Name).Trim();
-            string errorMessageDescription = ex.ToString();
-            errorMessageDescription = System.Text.RegularExpressions.Regex.Replace(errorMessageDescription, @"\r\n+", " "); //the carriage returns were messing up my log file
-            string msg = "Contact your system administrator. A record has been created in the log file." + Environment.NewLine;
-            msg += "Procedure: " + currentProcedure + Environment.NewLine;
-            msg += "Description: " + ex.ToString() + Environment.NewLine;
-            //Console.WriteLine(msg);
-            //Clipboard.SetText(ex.ToString());
+            // gather context
+            var sf = new System.Diagnostics.StackFrame(1);
+            var caller = sf.GetMethod();
+            var errorDescription = ex.ToString().Replace("\r\n", " "); // the carriage returns were messing up my log file
+            var currentProcedure = caller.Name.Trim();
+
+            // format message
+            var userMessage = new StringBuilder()
+                .AppendLine("Contact your system administrator. A record has been created in the log file.")
+                .AppendLine("Procedure: " + currentProcedure)
+                .AppendLine("Description: " + errorDescription)
+                .ToString();
+
+            // handle message
             if (isSilent == false)
             {
-                MessageBox.Show(msg, "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(userMessage, "Unexpected Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -48,17 +48,17 @@
             this.tsbCopy});
             this.tlbActiveDirectory.Location = new System.Drawing.Point(0, 0);
             this.tlbActiveDirectory.Name = "tlbActiveDirectory";
-            this.tlbActiveDirectory.Size = new System.Drawing.Size(445, 45);
+            this.tlbActiveDirectory.Size = new System.Drawing.Size(445, 48);
             this.tlbActiveDirectory.TabIndex = 116;
             this.tlbActiveDirectory.Text = "tlbActiveDirectory";
             // 
             // tsbCopy
             // 
-            this.tsbCopy.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbCopy.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsbCopy.Image = global::ADSearch.Properties.Resources.page_copy;
             this.tsbCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCopy.Name = "tsbCopy";
-            this.tsbCopy.Size = new System.Drawing.Size(54, 42);
+            this.tsbCopy.Size = new System.Drawing.Size(54, 45);
             this.tsbCopy.Text = "   &Copy   ";
             this.tsbCopy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbCopy.ToolTipText = "Copy to clipboard (Alt + C)";
@@ -68,7 +68,7 @@
             // 
             this.Splitter1.Location = new System.Drawing.Point(0, 0);
             this.Splitter1.Name = "Splitter1";
-            this.Splitter1.Size = new System.Drawing.Size(3, 559);
+            this.Splitter1.Size = new System.Drawing.Size(3, 602);
             this.Splitter1.TabIndex = 5;
             this.Splitter1.TabStop = false;
             // 
@@ -85,10 +85,10 @@
             this.tlpMain.Location = new System.Drawing.Point(3, 3);
             this.tlpMain.Name = "tlpMain";
             this.tlpMain.RowCount = 3;
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tlpMain.Size = new System.Drawing.Size(439, 553);
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tlpMain.Size = new System.Drawing.Size(439, 596);
             this.tlpMain.TabIndex = 7;
             // 
             // txtText
@@ -96,11 +96,11 @@
             this.txtText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtText.Location = new System.Drawing.Point(13, 13);
+            this.txtText.Location = new System.Drawing.Point(13, 14);
             this.txtText.Multiline = true;
             this.txtText.Name = "txtText";
             this.txtText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtText.Size = new System.Drawing.Size(413, 527);
+            this.txtText.Size = new System.Drawing.Size(413, 568);
             this.txtText.TabIndex = 0;
             // 
             // Panel1
@@ -108,20 +108,20 @@
             this.Panel1.Controls.Add(this.tlpMain);
             this.Panel1.Controls.Add(this.Splitter1);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel1.Location = new System.Drawing.Point(0, 45);
+            this.Panel1.Location = new System.Drawing.Point(0, 48);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(445, 559);
+            this.Panel1.Size = new System.Drawing.Size(445, 602);
             this.Panel1.TabIndex = 117;
             // 
-            // frmMessage
+            // Message
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 604);
+            this.ClientSize = new System.Drawing.Size(445, 650);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.tlbActiveDirectory);
-            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "frmMessage";
+            this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Message";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

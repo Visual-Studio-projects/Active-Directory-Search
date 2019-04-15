@@ -48,14 +48,22 @@ namespace ADSearch.Forms
         /// <param name="e">refers to the event arguments for the used event, they usually come in the form of properties/functions/methods that get to be available on it.</param>
         private void frmMain_Load(object sender, EventArgs e)
         {
-            this.Text = ADSearch.Scripts.AssemblyInfo.Description;
-            this.tslVersion.Text = ADSearch.Scripts.AssemblyInfo.AssemblyVersion;
-            this.tslReleaseDate.Text = File.GetLastWriteTime(Application.ExecutablePath).ToString("dd-MMM-yyyy  hh:mm tt");
-            this.tslCopyright.Text = "© " + ADSearch.Scripts.AssemblyInfo.Copyright;
-            LoadComboBox(this.cboDomain, Properties.Settings.Default.App_DomainList);
-            this.cboDomain.Text = Properties.Settings.Default.App_CompanyDomain;
-            subRootNode();
-            ADSearch.Scripts.AssemblyInfo.SetAddRemoveProgramsIcon("ADSearch.ico");
+            try
+            {
+                this.Text = ADSearch.Scripts.AssemblyInfo.Description;
+                this.tslVersion.Text = ADSearch.Scripts.AssemblyInfo.AssemblyVersion;
+                this.tslReleaseDate.Text = File.GetLastWriteTime(Application.ExecutablePath).ToString("dd-MMM-yyyy  hh:mm tt");
+                this.tslCopyright.Text = "© " + ADSearch.Scripts.AssemblyInfo.Copyright;
+
+                LoadComboBox(this.cboDomain, Properties.Settings.Default.App_DomainList);
+                this.cboDomain.Text = Properties.Settings.Default.App_CompanyDomain;
+                subRootNode();
+                ADSearch.Scripts.AssemblyInfo.SetAddRemoveProgramsIcon("ADSearch.ico");
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.DisplayMessage(ex);
+            }
         }
 
         #endregion
@@ -69,7 +77,14 @@ namespace ADSearch.Forms
         /// <param name="e"></param>
         private void cboFindItems_DropDownClosed(object sender, EventArgs e)
         {
-            FindItem(this.cboFindItems.Text);
+            try
+            {
+                FindItem(this.cboFindItems.Text);
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.DisplayMessage(ex);
+            }
         }
 
         /// <summary>
@@ -104,8 +119,15 @@ namespace ADSearch.Forms
         /// <param name="e"></param>
         private void tsbSave_Click(object sender, EventArgs e)
         {
-            string strFileName = this.tvwGroups.SelectedNode.Text;
-            exportListViewToCsv(strFileName);
+            try
+            {
+                string strFileName = this.tvwGroups.SelectedNode.Text;
+                exportListViewToCsv(strFileName);
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.DisplayMessage(ex);
+            }
         }
 
         /// <summary>
@@ -241,8 +263,8 @@ namespace ADSearch.Forms
                 //    case "CurrentMachine":
                 //    case "LanID":
                 //string strTemp = this.lvwAttributes.SelectedItems[i].SubItems[1].Text;
-                        //FindItem(strTemp);
-                        //break;              
+                //FindItem(strTemp);
+                //break;              
                 //}
             }
         }
@@ -703,85 +725,92 @@ namespace ADSearch.Forms
                 this.Cursor = Cursors.Default;
             }
         }
-       
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="groupName"></param>
         public void GetUsersInGroup(string groupName)
         {
-            string domainName = Properties.Settings.Default.App_CompanyDomain;
-            PrincipalContext ctx = new PrincipalContext(ContextType.Domain, domainName);
-            GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx, IdentityType.SamAccountName, groupName);
-            ListView lvwListView = this.lvwAttributes;
-            ListViewItem itmListItem = default(ListViewItem);
-            lvwListView.Clear();
-            lvwListView.Columns.Add("Name", 175, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("LanID", 100, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("Email", 225, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("Office", 150, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("Title", 200, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("Phone Number", 150, HorizontalAlignment.Left);
-            lvwListView.Columns.Add("When Created", 150, HorizontalAlignment.Left);
-
-            if (grp != null)
+            try
             {
-                foreach (Principal p in grp.GetMembers(false))
-                {
-                    itmListItem = new ListViewItem();
-                    itmListItem.Text = p.Name;
-                    itmListItem.SubItems.Add(p.SamAccountName);
+                string domainName = Properties.Settings.Default.App_CompanyDomain;
+                PrincipalContext ctx = new PrincipalContext(ContextType.Domain, domainName);
+                GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx, IdentityType.SamAccountName, groupName);
+                ListView lvwListView = this.lvwAttributes;
+                ListViewItem itmListItem = default(ListViewItem);
+                lvwListView.Clear();
+                lvwListView.Columns.Add("Name", 175, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("LanID", 100, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("Email", 225, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("Office", 150, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("Title", 200, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("Phone Number", 150, HorizontalAlignment.Left);
+                lvwListView.Columns.Add("When Created", 150, HorizontalAlignment.Left);
 
-                    if (p.StructuralObjectClass == "user")
+                if (grp != null)
+                {
+                    foreach (Principal p in grp.GetMembers(false))
                     {
-                        var uP = (UserPrincipal)p;
-                        if (uP != null)
+                        itmListItem = new ListViewItem();
+                        itmListItem.Text = p.Name;
+                        itmListItem.SubItems.Add(p.SamAccountName);
+
+                        if (p.StructuralObjectClass == "user")
                         {
-                            itmListItem.SubItems.Add(uP.EmailAddress);
+                            var uP = (UserPrincipal)p;
+                            if (uP != null)
+                            {
+                                itmListItem.SubItems.Add(uP.EmailAddress);
+                            }
                         }
+                        var creationDate = string.Empty;
+                        var physicaldeliveryofficename = string.Empty;
+                        var title = string.Empty;
+                        var telephoneNumber = string.Empty;
+                        var prop = string.Empty;
+                        var directoryEntry = p.GetUnderlyingObject() as DirectoryEntry;
+                        prop = "whenCreated";
+                        if (directoryEntry.Properties.Contains(prop))
+                        {
+                            creationDate = directoryEntry.Properties[prop].Value.ToString();
+                        }
+                        prop = "physicaldeliveryofficename";
+                        if (directoryEntry.Properties.Contains(prop))
+                        {
+                            physicaldeliveryofficename = directoryEntry.Properties[prop].Value.ToString();
+                        }
+                        prop = "title";
+                        if (directoryEntry.Properties.Contains(prop))
+                        {
+                            title = directoryEntry.Properties[prop].Value.ToString();
+                        }
+                        prop = "telephoneNumber";
+                        if (directoryEntry.Properties.Contains(prop))
+                        {
+                            telephoneNumber = directoryEntry.Properties[prop].Value.ToString();
+                        }
+                        itmListItem.SubItems.Add(physicaldeliveryofficename);
+                        itmListItem.SubItems.Add(title);
+                        itmListItem.SubItems.Add(telephoneNumber);
+                        itmListItem.SubItems.Add(creationDate);
+                        lvwListView.Items.Add(itmListItem);
+                        lvwListView.Refresh();
+                        itmListItem = null;
+                        this.Text = Application.ProductName + " (" + groupName + ")";
                     }
-                    var creationDate = string.Empty;
-                    var physicaldeliveryofficename = string.Empty;
-                    var title = string.Empty;
-                    var telephoneNumber = string.Empty;
-                    var prop = string.Empty;
-                    var directoryEntry = p.GetUnderlyingObject() as DirectoryEntry;
-                    prop = "whenCreated";
-                    if (directoryEntry.Properties.Contains(prop))
-                    {
-                        creationDate = directoryEntry.Properties[prop].Value.ToString();
-                    }
-                    prop = "physicaldeliveryofficename";
-                    if (directoryEntry.Properties.Contains(prop))
-                    {
-                        physicaldeliveryofficename = directoryEntry.Properties[prop].Value.ToString();
-                    }
-                    prop = "title";
-                    if (directoryEntry.Properties.Contains(prop))
-                    {
-                        title = directoryEntry.Properties[prop].Value.ToString();
-                    }
-                    prop = "telephoneNumber";
-                    if (directoryEntry.Properties.Contains(prop))
-                    {
-                        telephoneNumber = directoryEntry.Properties[prop].Value.ToString();
-                    }
-                    itmListItem.SubItems.Add(physicaldeliveryofficename);
-                    itmListItem.SubItems.Add(title);
-                    itmListItem.SubItems.Add(telephoneNumber);
-                    itmListItem.SubItems.Add(creationDate);
-                    lvwListView.Items.Add(itmListItem);
-                    lvwListView.Refresh();
-                    itmListItem = null;
-                    this.Text = Application.ProductName + " (" + groupName + ")";
+
+                    grp.Dispose();
+                    ctx.Dispose();
                 }
-                
-                grp.Dispose();
-                ctx.Dispose();
-                }
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.DisplayMessage(ex);
+            }
 
         }
-        
+
         /// <summary>
         /// Open the treeview node
         /// </summary>

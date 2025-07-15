@@ -377,15 +377,15 @@ Public Class frmMain
     End Sub
 
     Private Sub tsbSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbSave.Click
-        Call ExportListViewToCSV(exportFileName)
+        ExportListViewToCSV(exportFileName)
     End Sub
 
     Private Sub tsbFind_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbSearch.Click
-        Call FindItem()
+        FindItem()
     End Sub
 
     Private Sub tsbUserList_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsbUserList.Click
-        Call FindAllObjectClass()
+        FindAllObjectClass()
     End Sub
 
 #End Region
@@ -419,7 +419,7 @@ Public Class frmMain
             Dim strName As String = lvwAttributes.SelectedItems(I).Text
             If strName = "memberOf" Or strName = "member" Then
                 Dim strTemp As String = Me.lvwAttributes.SelectedItems(I).SubItems(1).Text.ToString
-                Call FindItem(strTemp)
+                FindItem(strTemp)
             End If
         Next
 
@@ -500,11 +500,11 @@ Public Class frmMain
     End Sub
 
     Private Sub mnuFind_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuFind.Click
-        Call FindItem()
+        FindItem()
     End Sub
 
     Private Sub mnuSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuSave.Click
-        Call ExportListViewToCSV(exportFileName)
+        ExportListViewToCSV(exportFileName)
     End Sub
 
 #End Region
